@@ -115,3 +115,18 @@ h3 {
 .D {
     background-image: url('../images/trivia.png');
 }
+
+/* FORM STYLING */
+
+input{
+    display: block;
+    width: 80%;
+    padding: 12px 0px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 20px;
+    border-bottom: black 3px solid
+}
