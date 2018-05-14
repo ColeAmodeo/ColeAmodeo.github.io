@@ -1,0 +1,117 @@
+
+
+
+
+nav {
+    height: 35px;
+    background-color: black;
+    color: lightskyblue;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+
+body { 
+    background-image: url("../images/congruent_outline.png"); 
+    background-repeat: repeat;
+    background-position: center;
+}
+
+h1 {
+    color: navy;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.page {
+    background-color: white;
+    opacity: 0.6;
+    background-position: center;
+    vertical-align: middle;
+    display:table;
+    margin:auto;
+    width: 960px;
+    margin-top: 35px;
+    border: 5px black solid
+}
+
+#portrait {
+    width: 15%;
+    float: left;
+    margin-left: 20px;
+
+}
+
+#p1 {
+    display: inline-block;
+    width: 80%;
+    min-width: 50px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+
+
+#bottom-text {
+    padding:10px;
+    margin-top:10px;
+
+}
+
+
+p {
+    font-size: 16px;
+    clear: both;
+    line-height: 1.5;
+ 
+
+}
+
+hr {
+    background-color: black;
+    color: black;
+    height: 5px;
+}
+
+a {
+    margin: 20px;
+    
+}
+
+/* GRID STYLING */
+
+grid {
+    margin-top: 25px;
+    display:grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 20px;
+ }
+.project {
+        background-size: contain;
+        background-repeat: round;
+        border-radius: 3%    
+}
+h3 {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.A {
+    background-image: url('../images/hangman.png');
+}
+.B {
+    background-image: url('../images/rpg.png');
+}
+.C {
+    background-image: url('../images/rock-paper-scissors.png');
+}
+.D {
+    background-image: url('../images/trivia.png');
+}
