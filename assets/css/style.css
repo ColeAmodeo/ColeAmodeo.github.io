@@ -4,16 +4,23 @@
 
 nav {
     height: 35px;
-    background-color: black;
-    color: lightskyblue;
+    background-color: #E4E2D4;
+    opacity: 0.75;
     font-size: 25px;
     text-align: center;
+    text-decoration: none;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 3;
 }
+a {
+    margin: 20px;
+    text-decoration: none;
+    color: #2B8895;
 
+    
+}
 
 body { 
     background-image: url("../images/congruent_outline.png"); 
@@ -29,7 +36,7 @@ h1 {
 }
 
 .page {
-    background-color: white;
+    background-color: #E4E2D4;
     opacity: 0.6;
     background-position: center;
     vertical-align: middle;
@@ -78,25 +85,25 @@ hr {
     height: 5px;
 }
 
-a {
-    margin: 20px;
-    
-}
+
 
 /* GRID STYLING */
 
 grid {
-    margin-top: 25px;
+    
+    margin: 22px auto 0 auto;
     display:grid;
-    width: 100%;
+    width: 95%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 250px);
     grid-gap: 20px;
  }
 .project {
-        background-size: contain;
-        background-repeat: round;
-        border-radius: 3%    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 3%;    
+        border: black 2px solid;
 }
 h3 {
     background-color: black;
@@ -124,9 +131,18 @@ input{
     padding: 12px 0px;
     margin: 30px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 label {
     font-size: 20px;
     border-bottom: black 3px solid
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    padding: 12px 0px;
+    margin: 30px;
+    box-sizing: border-box;
 }
