@@ -31,6 +31,7 @@ a {
     font-size: 25px;
     text-align: center;
     color: #2B8895;
+    transition: background-color 0.5s ease;
 }
 a:hover {
     background-color: #202723
@@ -60,8 +61,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     position: relative;
-    padding-top: 25px;
-    height:70px;
+    padding: 25px 0;
     background-color: #2B8895;
 }
 
@@ -73,13 +73,14 @@ h1 {
     display:table;
     margin:auto;
     width: 960px;
-    margin-top: 70px;
+    margin-top: 65px;
 }
 
 #portrait {
     width: 15%;
     float: left;
     margin-left: 20px;
+    margin-top: 25px;
 
 }
 
@@ -95,7 +96,7 @@ h1 {
 
 
 #bottom-text {
-    padding:0 30px 10px 30px;
+    padding:0 30px 40px 30px;
     margin-top:10px;
     text-align: justify;
 }
@@ -128,7 +129,8 @@ footer {
 h2 {
     padding-top:5px;
     color: #2B8895;
-    font-size:30px;
+    font-size:20px;
+    text-align: center;
 }
 
 
@@ -157,8 +159,13 @@ h3 {
     color: #2B8895;
     text-align: center;
     font-size: 25px;
-    height: 30px;
-    border: black 1px solid;
+    padding: 8px 0;
+    border: black 1px solid; 
+    transition: background-color 0.5s ease;
+}
+h3:hover {
+    background-color: #E4E2D4
+    
 }
 .A {
     background-image: url('../images/hangman.png');
@@ -172,7 +179,12 @@ h3 {
 .D {
     background-image: url('../images/trivia.png');
 }
-
+.E {
+    background-image: url('../images/the-terminator.png')
+}
+.F { 
+    background-image: url('../images/nuke.png')
+}
 /* FORM STYLING */
 
 input{
@@ -186,10 +198,10 @@ input{
 
 label {
     font-size: 20px;
-    margin: 10 0 0 20px;
+    margin: 10px 0 0 20px;
     position: relative;
     top: 30px;
-    left: 39px;
+    left: 21px;
 }
 
 textarea {
