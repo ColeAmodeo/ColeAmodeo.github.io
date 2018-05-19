@@ -3,7 +3,7 @@
 
 
 nav {
-    height: 35px;
+    height: 60px;
     background-color: #E4E2D4;
     opacity: 0.75;
     width: 100%;
@@ -24,7 +24,7 @@ h4 {
 }
 a {
     margin: 0 10px;
-    padding: 6px;
+    padding: 18px;
     float: right;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -39,7 +39,7 @@ a:hover {
 .name {
     height: 31px;
     float:left;
-    padding: 2.5px 5px;
+    padding: 14.5px 10px;
     text-align:center;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
@@ -56,12 +56,12 @@ body {
 
 h1 {
     color: #E4E2D4;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     position: relative;
-    top: 5px;
-    height:40px;
+    padding-top: 25px;
+    height:70px;
     background-color: #2B8895;
 }
 
@@ -73,8 +73,7 @@ h1 {
     display:table;
     margin:auto;
     width: 960px;
-    margin-top: 35px;
-    border: 5px black solid
+    margin-top: 70px;
 }
 
 #portrait {
@@ -86,18 +85,19 @@ h1 {
 
 #p1 {
     display: inline-block;
-    width: 80%;
+    width: 76%;
     min-width: 50px;
-    margin-left: 10px;
+    margin-left: 30px;
     text-align: justify;
+    padding-top: 20px;
 }
 
 
 
 #bottom-text {
-    padding:10px;
+    padding:0 30px 10px 30px;
     margin-top:10px;
-
+    text-align: justify;
 }
 
 
@@ -111,7 +111,8 @@ p {
 }
 
 hr {
-    background-color: black;
+
+    background-color: #444;
     color: black;
     height: 5px;
 }
@@ -127,7 +128,7 @@ footer {
 h2 {
     padding-top:5px;
     color: #2B8895;
-    font-size:20px;
+    font-size:30px;
 }
 
 
@@ -175,24 +176,27 @@ h3 {
 /* FORM STYLING */
 
 input{
-    display: block;
-    width: 80%;
-    padding: 12px 0px;
-    margin: 30px;
+    display: inline-block;
+    width: 85%;
+    padding: 12px 15px;
+    margin: 40px;
     box-sizing: border-box;
     font-size: 16px;
 }
 
 label {
     font-size: 20px;
-    border-bottom: black 3px solid
+    margin: 10 0 0 20px;
+    position: relative;
+    top: 30px;
+    left: 39px;
 }
 
 textarea {
     display: block;
-    width: 80%;
+    width: 85%;
     padding: 12px 0px;
-    margin: 30px;
+    margin: 40px;
     box-sizing: border-box;
 }
 
