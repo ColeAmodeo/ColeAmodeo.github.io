@@ -3,36 +3,53 @@
 
 
 nav {
-    height: 35px;
+    height: 60px;
     background-color: #E4E2D4;
     opacity: 0.75;
-  
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 3;
+}
+
+.navigation {
+    width: 80%;
+    margin: auto;
+    max-width: 960px;
+    
 }
 h4 {
     color: #2B8895;
     font-size: 25px;
     margin: 5px 0px 5px 40px;
 }
-a {
-    margin: 20px;
-    padding: 5px;
+a.nav-link {
+    margin: 0 10px;
+    padding: 18px;
+    float: right;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-size: 25px;
     text-align: center;
     color: #2B8895;
-
-
-    
+    transition: background-color 0.5s ease;
 }
-a:hover {
+a.nav-link:hover {
     background-color: #202723
 }
 
+.name {
+    height: 31px;
+    float:left;
+    padding: 14.5px 10px;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #E4E2D4;
+    background-color: #2B8895;
+    text-indent: 0;
+
+}
 body { 
     background-image: url("../images/congruent_outline.png"); 
     background-repeat: repeat;
@@ -40,45 +57,49 @@ body {
 }
 
 h1 {
-    color: #2B8895;
-    font-size: 30px;
+    color: #E4E2D4;
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    position: relative;
+    padding: 25px 0;
+    background-color: #2B8895;
 }
 
 .page {
     background-color: #E4E2D4;
-    opacity: 0.6;
+    opacity: 0.70;
     background-position: center;
     vertical-align: middle;
     display:table;
     margin:auto;
-    width: 960px;
-    margin-top: 35px;
-    border: 5px black solid
+    width: 80%;
+    margin-top: 65px;
+    max-width: 960px;
 }
 
 #portrait {
-    width: 15%;
+    width: 35%;
     float: left;
-    margin-left: 20px;
+    margin:25px 0 25px 5%;
+    min-width: 150px;
 
 }
 
 #p1 {
     display: inline-block;
-    width: 80%;
+    width: 50%;
     min-width: 50px;
-    margin-left: 10px;
+    margin: 25px 5% 25px 5%;
     text-align: justify;
+
 }
 
 
 
 #bottom-text {
-    padding:10px;
-    margin-top:10px;
-
+    padding:0 5% 25px 5%;
+    text-align: justify;
 }
 
 
@@ -86,22 +107,35 @@ p {
     font-size: 18px;
     clear: both;
     line-height: 1.5;
- 
-
+    text-indent: 30px;
 }
 
 hr {
-    background-color: black;
+
+    background-color: #444;
     color: black;
     height: 5px;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    height:35px;
+    background-color: #E4E2D4;
+    opacity: 0.6;
+}
+h2 {
+    padding-top:5px;
+    color: #2B8895;
+    font-size:20px;
+    text-align: center;
+}
 
 
 /* GRID STYLING */
 
 grid {
-    
     margin: 22px auto 0 auto;
     display:grid;
     width: 95%;
@@ -109,6 +143,8 @@ grid {
     grid-template-rows: repeat(3, 250px);
     grid-gap: 20px;
  }
+
+
 .project {
         background-size: cover;
         background-repeat: no-repeat;
@@ -119,12 +155,18 @@ grid {
 h3 {
     position: relative;
     top: 25%;
-    background-color: #E4E2D4;
+    background-color: black;
     color: #2B8895;
     text-align: center;
     font-size: 25px;
-    height: 30px;
-    border: black 2px soli
+    padding: 8px 0;
+    border: black 1px solid; 
+    transition: background-color 0.5s ease;
+}
+h3:hover {
+    background-color: #E4E2D4;
+    cursor: pointer;
+    
 }
 .A {
     background-image: url('../images/hangman.png');
@@ -138,32 +180,51 @@ h3 {
 .D {
     background-image: url('../images/trivia.png');
 }
-
+.E {
+    background-image: url('../images/the-terminator.png')
+}
+.F { 
+    background-image: url('../images/nuke.png')
+}
 /* FORM STYLING */
 
 input{
-    display: block;
-    width: 80%;
-    padding: 12px 0px;
-    margin: 30px;
+    display: inline-block;
+    width: 85%;
+    padding: 12px 15px;
+    margin: 40px;
     box-sizing: border-box;
     font-size: 16px;
 }
 
 label {
-    font-size: 20px;
-    border-bottom: black 3px solid
+    font-size: 24px;
+    margin: 10px 0 0 20px;
+    position: relative;
+    top: 30px;
+    left: 21px;
+    color: #2B8895;
 }
 
 textarea {
     display: block;
-    width: 80%;
-    padding: 12px 0px;
-    margin: 30px;
+    width: 85%;
+    padding: 50px 0px;
+    margin: 40px;
     box-sizing: border-box;
 }
 
 #submit {
     width: 100px;
+    background-color: #2B8895;
+    color: #E4E2D4;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    
+}
 
+#submit:hover {
+    cursor: pointer;
+    background-color: #202723;
+    
 }
