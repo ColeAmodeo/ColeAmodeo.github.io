@@ -16,12 +16,11 @@ nav {
     width: 80%;
     margin: auto;
     max-width: 960px;
-    min-width: 640px;
+    min-width: 450px;
     
 }
 
 a.nav-link {
-    margin: 0 1%;
     padding: 20px;
     float: right;
     font-family: 'Poppins', sans-serif;
@@ -35,7 +34,9 @@ a.nav-link {
 a.nav-link:hover {
     background-color: #202723
 }
-
+.hidden-nav {
+    display: none;
+}
 .name {
     height: 31px;
     float:left;
@@ -74,7 +75,7 @@ h1 {
     width: 80%;
     margin-top: 65px;
     max-width: 960px;
-    min-width: 640px;
+    
 }
 
 #portrait {
@@ -230,4 +231,73 @@ textarea {
     cursor: pointer;
     background-color: #202723;
     
+}
+
+/* Media Queries  */
+@media only screen and (max-width: 980px){
+    .name {
+        width:100%;
+        float:none;
+        margin:auto;
+        padding:auto;
+        text-align: center;
+    }
+    .nav-link{
+        display:none;
+    }
+    .hidden-nav{
+        
+            height: 40px;
+            background-color: #E4E2D4;
+            opacity: 0.75;
+            width: 100%;
+            position: relative;
+            top: 62.5px;
+            z-index: 3;
+            display:inline-block;
+            text-align:center;
+    }
+    .hidden-link{
+        display: inline-block;
+        padding: 10px;
+    
+        margin: 0 auto;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        font-size: 130%;
+        text-align: center;
+        color: #2B8895;
+        transition: background-color 0.5s ease;
+    }
+    a.hidden-link:hover {
+        background-color: #202723
+    }
+}
+@media only screen and (max-width: 768px) {
+   grid {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(3, 250px);
+   }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+   grid {
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(6, 250px);
+   }
+   #p1 {
+       width:90%;
+   }
+   #portrait {
+       float: none;
+       margin: 30px 30%;
+       width:40%;
+   }
+
+}
+
+.page {
+    width: 95%;
 }
